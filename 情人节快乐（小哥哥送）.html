@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #react {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite;
+            animation-timing-function: linear;
+        }
+
+        #react div {
+            position: absolute;
+            transition: all .4s;
+        }
+
+        div .out_pic {
+            width: 200px;
+            height: 200px;
+            opacity: 0.4;
+        }
+
+        div .in_pic {
+            width: 100px;
+            height: 100px;
+        }
+
+        #react span {
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            left: 50px;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        .out_frount {
+            transform: translateZ(100px);
+        }
+
+        .out_back {
+            transform: translateZ(-100px);
+        }
+
+        .out_left {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .out_right {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .out_top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .out_bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .in_frount {
+            transform: translateZ(50px);
+        }
+
+        .in_back {
+            transform: translateZ(-50px);
+        }
+
+        .in_left {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .in_right {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        .in_top {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .in_bottom {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+
+        #react:hover .out_frount {
+            transform: translateZ(200px);
+        }
+
+        #react:hover .out_back {
+            transform: translateZ(-200px);
+        }
+
+        #react:hover .out_left {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+
+        #react:hover .out_right {
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+
+        #react:hover .out_top {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+
+        #react:hover .out_bottom {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+
+        #shi {
+            font-size: 17px;
+            color: #09F;
+            height: 25px;
+            font-weight: bold;
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+<audio src=https://m801.music.126.net/20200213225222/712f3b09f51d9227502393042a07853c/jdyyaac/070e/5259/0e58/0dd19b86f3e321f1c08e92ab4db7e5d8.m4a autoplay id="audio"></audio>
+<div id="wai" style="width:0px; height:76px; overflow:hidden">
+    <div id="shi">遇见，就是缘分，我丢~  小妹妹！情人节快乐</div>
+	<div id="shi">认识的有点突然，我吃鸡技术也不咋滴，也没太多时间陪你吃鸡嘿嘿</div>
+	<div id="shi">祝你把把吃鸡！❤没人陪你坐热气球我陪你，荡秋千没人陪你我陪你</div>
+	
+</div>
+<div id="react">
+    <div class="out_frount">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTlzB9eQxfqaR459ilAwndKJVijEkobHm1SB7sN8seM8qVyRBAReaTDzXTOwP6CUUIKHrTDkPyDxed8Ac3iLELrc!/b&bo=xAg4BAAAAAARB8A!&rf=viewer_4" class="out_pic">
+    </div>
+    <div class="out_back">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTlUKDbqdN8hkwvsV8WsaeZCi*zxHesVINpCBDeXVqHfDpUn5SBKMVWvUMvtrSdWLfkx.uXcz*ZeJUkNoRom1F40!/b&bo=xAg4BAAAAAARJ.A!&rf=viewer_4" class="out_pic">
+    </div>
+<div class="out_left">
+        <img src="http://a1.qpic.cn/psc?/V10NYc621fMWbS/T0po5IVZeaNliPGRfxFJTnwnLWkjb8c2erUchhykwBKNyWKQp.t0olyqfbcdBGxpbKvby7pDGSzHeNX1EdUVzxR*wSJImAC5HrYdPm3*ViA!/c&ek=1&kp=1&pt=0&bo=OAQ4BDgEOAQRECc!&tl=3&vuin=1805185564&tm=1581602400&sce=60-2-2&rf=viewer_311" class="out_pic">
+    </div>
+    <div class="out_right">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTtx.D9lLpflS2pBejb07eko9DJWIRUhG8aOK7kwu4M5kFlwG5IjgbM6SE8kzhY6i73O6.P1drFAlkahai*a1.xs!/b&bo=xAg4BAAAAAARF9A!&rf=viewer_4" class="out_pic">
+    </div>
+    <div class="out_top">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTtx.D9lLpflS2pBejb07eko9DJWIRUhG8aOK7kwu4M5kFlwG5IjgbM6SE8kzhY6i73O6.P1drFAlkahai*a1.xs!/b&bo=xAg4BAAAAAARF9A!&rf=viewer_4" class="out_pic">
+    </div>
+    <div class="out_bottom">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTtx.D9lLpflS2pBejb07eko9DJWIRUhG8aOK7kwu4M5kFlwG5IjgbM6SE8kzhY6i73O6.P1drFAlkahai*a1.xs!/b&bo=xAg4BAAAAAARF9A!&rf=viewer_4" class="out_pic">
+    </div>
+    <span class="in_frount">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTlzB9eQxfqaR459ilAwndKJVijEkobHm1SB7sN8seM8qVyRBAReaTDzXTOwP6CUUIKHrTDkPyDxed8Ac3iLELrc!/b&bo=xAg4BAAAAAARB8A!&rf=viewer_4" class="in_pic">
+    </span>
+    <span class="in_back">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTlzB9eQxfqaR459ilAwndKJVijEkobHm1SB7sN8seM8qVyRBAReaTDzXTOwP6CUUIKHrTDkPyDxed8Ac3iLELrc!/b&bo=xAg4BAAAAAARB8A!&rf=viewer_4" class="in_pic">
+    </span>
+    <span class="in_left">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTlUKDbqdN8hkwvsV8WsaeZCi*zxHesVINpCBDeXVqHfDpUn5SBKMVWvUMvtrSdWLfkx.uXcz*ZeJUkNoRom1F40!/b&bo=xAg4BAAAAAARJ.A!&rf=viewer_4" class="in_pic">
+    </span>
+    <span class="in_right">
+        <img src="http://a1.qpic.cn/psc?/V10NYc621fMWbS/T0po5IVZeaNliPGRfxFJTnwnLWkjb8c2erUchhykwBKNyWKQp.t0olyqfbcdBGxpbKvby7pDGSzHeNX1EdUVzxR*wSJImAC5HrYdPm3*ViA!/c&ek=1&kp=1&pt=0&bo=OAQ4BDgEOAQRECc!&tl=3&vuin=1805185564&tm=1581602400&sce=60-2-2&rf=viewer_311" class="in_pic">
+    </span>
+    <span class="in_top">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTtx.D9lLpflS2pBejb07eko9DJWIRUhG8aOK7kwu4M5kFlwG5IjgbM6SE8kzhY6i73O6.P1drFAlkahai*a1.xs!/b&bo=xAg4BAAAAAARF9A!&rf=viewer_4" class="in_pic">
+    </span>
+    <span class="in_bottom">
+        <img src="http://m.qpic.cn/psc?/V11UfUzn4W855C/T0po5IVZeaNliPGRfxFJTtx.D9lLpflS2pBejb07eko9DJWIRUhG8aOK7kwu4M5kFlwG5IjgbM6SE8kzhY6i73O6.P1drFAlkahai*a1.xs!/b&bo=xAg4BAAAAAARF9A!&rf=viewer_4" class="in_pic">
+    </span>
+</div>
+</body>
+<script type="text/javascript">
+    showshi();
+
+    function showshi() {
+        var s = document.getElementById("wai");
+        if (parseInt(s.style.width) < 1500) {
+            var w = parseInt(s.style.width) + 1;
+            s.style.width = w + "px";
+            window.setTimeout("showshi()", 20);
+        }
+    }
+</script>
+</html>
